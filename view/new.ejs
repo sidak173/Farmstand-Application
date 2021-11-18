@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <title></title>
+</head>
+
+<body>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <form action="/products" method="post">
+        <label for="name">Product name</label>
+        <input type="text" name="name" id="name"> 
+        <br>
+        <label for="price">Price</label>
+        <input type="number" name="price" id="price">
+        <br>
+        <label for="category">category</label>
+        <select name="category" id="category">
+            <option value="fruit">fruit</option>
+            <option value="vegetable">vegetable</option>
+            <option value="dairy">dairy</option>
+        </select>
+        <br>
+        <button>Submit</button>
+    </form>
+    <a href="/products">Back to Products page</a>
+</body>
+
+
+</html>
